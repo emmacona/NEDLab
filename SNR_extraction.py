@@ -47,7 +47,12 @@ for file_path in file_paths:
 
     # Signal and noise
     signal_idx = np.where((freqs > frequency - 0.5) & (freqs < frequency + 0.5))[0] # +/- 0.5 Hz Bandwidth
+    # Note - optimize this parameter / play with it, could be more 0.8, 1..
+    # TODO : optimize + visualize
+
     noise_idx = np.where((freqs > 4) & (freqs < 8))[0] # between 4 and 8 (target: 6Hz)
+    # Note - decalage de frequences... to be optimized as well
+    # TODO : optimize + visualize
 
     signal_power = np.sum(power_spectrum[signal_idx]) # Sum of the power within the signal indices
     noise_power = np.mean(power_spectrum[noise_idx]) # Average of the power across the noise indices
