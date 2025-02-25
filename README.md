@@ -41,17 +41,24 @@ _Select interpreter_
 
 
 ## Renamed columns
-'NVIQ_CIupr': 'Estimated loss of Non-Verbal Intelligence Quotient'
-    - 
+**'NVIQ_CIupr': 'Estimated loss of Non-Verbal Intelligence Quotient'**  
+- Verbal Intelligence Quotient - number of lost VIQ point
 
-'ORASD_upr': 'Estimated odds ratio for autism'
-    - 
+**'ORASD_upr': 'Estimated odds ratio for autism'**  
+- Gives an estimation of ASD
 
-'SRS_CIupr': 'Estimated gain of raw score of Social Responsiveness Scale'
-    - 
+**'SRS_CIupr': 'Estimated gain of raw score of Social Responsiveness Scale'**  
+- Gives an estimation of SR
 
-'PdN_CIupr': 'Estimated probability of being de novo'
-    - 
+**'PdN_CIupr': 'Estimated probability of being de novo'**  
+- Probability that the mutation is de novo (DNM)
 
-'sum_LOEUF_complete': 'Sum LOEUF'
-    - 
+**'sum_LOEUF_complete': 'Sum LOEUF'**
+- The LOEUF score is the measure of loss-of-function observed/expected upper bound fraction
+- Sum of LOEUF without correction for NON-DNM
+
+## CNV calculation
+- Using https://cnvprediction.urca.ca/index.html.
+- Hg19 and Hg38
+- One participant excluded for Hg18 genome version (cannot calculate CNV related risk).
+- One participant excluded for lack of START/STOP boundary info (Turner only).
