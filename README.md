@@ -38,7 +38,13 @@ _Select interpreter_
 | PdN_CIupr                 | Estimated probability of being de novo                 | Yes  |
 | sum_LOEUF_complete        | Sum LOEUF                                              | Yes  |
 
-
+### Participant Codes
+- M = Mother
+- F = Father
+- S = Sibling
+- P = Proband
+- O = Other (10093_O => grand mere)
+- C = Child
 
 ## Renamed columns
 **'NVIQ_CIupr': 'Estimated loss of Non-Verbal Intelligence Quotient'**  
